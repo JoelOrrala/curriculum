@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Currículum Vitae</title>
     <meta name="keywords" content="Currículum, Joel Orrala, CV, Ingeniero en computación">
     <meta name="description" content="Currículum Vitae de Joel Orrala, Ingeniero en computación.">
     <meta name="author" content="Joel Orrala">
+
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+
 </head>
+
 <body>
     <header>
         <h1>Currículum Vitae</h1>
@@ -17,7 +41,9 @@
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#mapa">Mapa</a></li>
         </ul>
     </nav>
     <section id="informacion-personal">
@@ -25,36 +51,79 @@
         <p>Nombre: <span>Joel Orrala</span></p>
         <p>Teléfono: <span>0996530267</span></p>
         <p>Correo electrónico: <span>jjorrala@espol.edu.ec</span></p>
+        <a href="https://www.linkedin.com/in/your-name">LinkedIn</a>
     </section>
     <section id="educacion">
         <h2>Educación</h2>
-        <p>Grado: <span>Ingeniero en computación</span></p>
-        <p>Institución: <span>Escuela Superior Politécnica del Litoral</span></p>
-        <p>Fechas: <span>2021 - 2024</span></p>
+        <p><span class="bold">Grado: </span>Ingeniero en computación</p>
+        <p><span><strong>Institución: </strong></span>Escuela Superior Politécnica del Litoral</p>
+        <p><span><strong>Fechas: </strong></span>2021 - 2024</p>
     </section>
     <section id="experiencia">
         <h2>Experiencia</h2>
-        <p>Cargo: <span>Desarrollador de software</span></p>
-        <p>Empresa: <span>Google</span></p>
-        <p>Fechas: <span>2023 - Presente</span></p>
-        <p>Descripción:</p>
-        <ul>
-            <li>Desarrollo de aplicaciones web</li>
-            <li>Mantenimiento de sistemas</li>
-            <li>Trabajo en equipo</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Puesto</th>
+                    <th>Años de experiencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google</td>
+                    <td>Desarrollador web</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
     <section id="habilidades">
         <h2>Habilidades</h2>
-        <ul>
+        <ol>
             <li>Lenguajes de programación: Python, JavaScript, Java</li>
             <li>Bases de datos: MySQL</li>
             <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
             <li>Otros: Inglés</li>
-        </ul>
+        </ol>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form action="procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+      
+    </section>
+    <section id="multimedia">
+        <h2>Multimedia</h2>
+        <h3>Imagen</h3>
+        <img src="https://placehold.co/400" alt="Descripción de la imagen">
+
+        <h3>Video</h3>
+        <video width="320" height="240" controls>
+            <source src="https://youtu.be/8lMIdrlIWOQ?si=gcvv3sH11qIb2a80" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8lMIdrlIWOQ" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="mapa">
+        <h2>Ubicación</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.390127641492!2dLONGITUD!3dLATITUD!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDM2JzI1LjQiUyA3NsKwNTYnMDQuMiJX!5e0!3m2!1sen!2sus!4v1587579541003!5m2!1sen!2sus"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <footer>
         <p>Copyright © 2023 Joel Orrala</p>
     </footer>
 </body>
+
 </html>
