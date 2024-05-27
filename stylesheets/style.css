@@ -1,38 +1,150 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
+
+
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: Georgia, serif;
+}
+
 
 .titulo {
     font-family: Times New Roman, serif;
 }
 
-* {
-    font-family: Arial, sans-serif;
+
+body {
+    background-color: #f0f4f8;
+    color: #333; 
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 
-h1 {
-    font-family: Raleway;
+header {
+    text-align: center;
+    padding: 20px 0;
 }
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 
 #experiencia {
     background-color: #6ea1d8;
-}
-
-#educacion h2 {
-    color: red;
-}
-
-#experiencia {
-    margin: 2px 1px 1.5px;
-    margin-top: 0.8rem;
-    border: 0.2pt dashed #827d7d;
-    padding: 2% 1.2%;
-}
-
-#experiencia {
+    color: #fff; 
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
     box-shadow:
         rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px,
         rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px,
         rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+#educacion {
+    background-color: #e0e7ef;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+
+#educacion h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+#multimedia div {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
 }
