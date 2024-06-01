@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
 * {
@@ -12,12 +12,23 @@
 
 
 h1 {
-    font-family: Georgia, serif;
+    font-family: Oswald, serif;
 }
 
+h2 {
+    color: #1a5070;
+}
+
+h3 {
+    color: #1e6089;
+}
 
 .titulo {
     font-family: Times New Roman, serif;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 
@@ -53,12 +64,79 @@ nav ul li a {
     font-weight: bold;
 }
 
+.info-personal-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
-#experiencia {
-    background-color: #6ea1d8;
-    color: #fff; 
+.info-personal-container .foto {
+    margin-bottom: 20px;
+}
+
+.info-personal-container .foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-personal-container .info {
+    display: inline-block;
+    text-align: center;
+}
+
+
+#educacion {
+    background-color: #d2dbe5;
     padding: 20px;
     margin: 20px 0;
+    border-radius: 8px;
+}
+
+.educacion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+}
+
+.educacion-info {
+    flex: 1; 
+}
+
+.educacion-mapa {
+    flex-basis: 400px; 
+}
+
+
+#habilidades {
+    background-color: #e0e7ef;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#habilidades ol li {
+    margin-bottom: 10px; 
+}
+
+#habilidades ol li:last-child {
+    margin-bottom: 0; 
+}
+
+.habilidades-info{
+    margin-left: 20px;
+}
+
+.proyectos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    background-color: #cbd4df;
     border-radius: 8px;
     box-shadow:
         rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -66,42 +144,36 @@ nav ul li a {
         rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px,
         rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-
-#educacion {
-    background-color: #e0e7ef;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
 }
 
-
-#educacion h2 {
-    color: #333;
+.proyecto h3 {
+    margin-bottom: 10px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 16px;
+.proyecto video {
+    margin-bottom: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+.proyecto p {
+    margin-bottom: 10px;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
+.proyecto a {
+    display: block;
+    margin-top: 10px;
 }
 
-thead {
-    background-color: #333;
-    color: #fff;
+#proyectos {
+    margin-bottom: 40px; 
 }
 
+#formulario {
+    max-width: 50%;
+    margin: auto;
+}
 
 form div {
     margin-bottom: 15px;
@@ -132,12 +204,6 @@ button {
 button:hover {
     background-color: #555;
 }
-
-
-#multimedia div {
-    margin-bottom: 20px;
-}
-
 
 footer {
     text-align: center;
